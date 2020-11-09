@@ -1,1 +1,228 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  position: relative;
+}
+
+header {
+  margin: 10px auto;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+  color: white;
+  /*transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);*/
+  background-color: #ffffff;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile .rayo {
+  vertical-align: middle;
+}
+
+.mobile .rayo img {
+  width: 30px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.nav-pills .nav-link {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #08090a;
+  font-size: 22px;
+  border-radius: 3px;
+}
+
+.nav-pills .nav-link.active {
+  border-bottom: 4px solid #3b49df;
+  background-color: transparent;
+  color: #08090a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-pills .nav-link:hover {
+  text-decoration: none;
+  color: #3b49df;
+  background-color: rgba(59, 73, 223, 0.1);
+}
+
+.nav-link {
+  padding: 8px;
+  margin: 0 4px;
+}
+
+.post-title {
+  font-weight: bolder;
+}
+
+nav a:focus {
+  border-bottom: 4px solid #3b49df;
+}
+
+select {
+  padding: 10px 15px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+}
+
+.tab-content .tab-pane .card {
+  margin-bottom: .25rem;
+  border-radius: 5px;
+}
+
+.tab-content .tab-pane .card .card-img-top {
+  max-height: 268px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tab-content .tab-pane .card:hover {
+  cursor: pointer;
+}
+
+.tab-content .tab-pane .card .card-body .profile_min {
+  width: 53px;
+  border-radius: 50%;
+  height: 53px;
+  border: 1px solid #64707d;
+}
+
+.tab-content .tab-pane .card .card-body div.info_personal {
+  vertical-align: middle;
+}
+
+.tab-content .tab-pane .card .card-body span.name a {
+  color: #4d5760;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.tab-content .tab-pane .card .card-body span.name a:hover {
+  color: #08090a;
+}
+
+.tab-content .tab-pane .card .card-body span.date a {
+  font-size: 14px;
+  color: #64707d;
+}
+
+.tab-content .tab-pane .card .card-body span.date a:hover {
+  color: #08090a;
+}
+
+.tab-content .tab-pane .card .card-body .content-center {
+  margin-left: 40px;
+}
+
+.tab-content .tab-pane .card .card-body .content-center .card-title a {
+  color: #08090a;
+  font-weight: bolder;
+}
+
+.tab-content .tab-pane .card .card-body .content-center .card-title a:hover {
+  color: #323ebe;
+}
+
+.tab-content .tab-pane .card .card-body .hashtags {
+  margin-bottom: 8px;
+}
+
+.tab-content .tab-pane .card .card-body .hashtags a {
+  color: #64707d;
+  font-size: 16px;
+  padding: 4px;
+  margin-top: 8px;
+}
+
+.tab-content .tab-pane .card .card-body .hashtags a:nth-child(1) {
+  background: #ffedc9;
+  color: #820000;
+  border-radius: 5px;
+}
+
+.tab-content .tab-pane .card .card-body .hashtags a:hover {
+  color: #08090a;
+}
+
+.tab-content .tab-pane .card .card-body .hashtags a .crayon {
+  opacity: 0.4;
+}
+
+.tab-content .tab-pane .card .card-body .card-b-content .icon-right a {
+  color: #202428;
+  padding: 4px 12px 4px 8px;
+  border-radius: 5px;
+}
+
+.tab-content .tab-pane .card .card-body .card-b-content .icon-right a:hover {
+  background-color: rgba(181, 189, 196, 0.1);
+}
+
+.tab-content .tab-pane .card .card-body .card-b-content .icon-left .timer {
+  margin-right: 8px;
+}
+
+.tab-content .tab-pane .card .card-body .card-b-content .icon-left .btn-less-light {
+  background-color: #d2d6db;
+  padding: 6px 14px;
+}
+
+.tab-content .tab-pane .card .card-body .card-b-content .icon-left .btn-less-light:hover {
+  background-color: #b5bdc4;
+}
+
+.tab-content .tab-pane .card .card-body .card-b-content .icon-left .btn-less-light:focus {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  .tab-content .tab-pane .card {
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border-top: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
