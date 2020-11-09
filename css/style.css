@@ -1,3 +1,8 @@
+.navegation-icon {
+  font-size: 2px;
+  color: dodgerblue;
+}
+
 body {
   position: relative;
   background-color: #eef0f1;
@@ -64,7 +69,7 @@ a:hover {
 }
 
 .nav-pills .nav-link {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #08090a;
   font-size: 22px;
   border-radius: 3px;
@@ -391,5 +396,137 @@ select {
   .card-body {
     font-size: smaller;
   }
+}
+
+.img-logo {
+  height: 50px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.img-smill {
+  height: 40px;
+  width: 30px;
+  margin-top: 7px;
+  margin-left: 8px;
+}
+
+.img-bell {
+  height: 40px;
+  width: 30px;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
+.img-avatar {
+  height: 40px;
+  width: 30px;
+  margin-top: 7px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.img-avatar:hover + .menu-avatar {
+  display: block;
+}
+
+.menu-avatar {
+  position: absolute;
+  display: none;
+  -webkit-transition: all 0.10s ease-in-out;
+  transition: all 0.10s ease-in-out;
+}
+
+li {
+  text-decoration: none;
+}
+
+.form-control {
+  margin-top: 7px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  height: 35px;
+  margin-top: 7px;
+  margin-right: 5px;
+  display: none;
+  font-size: 16px;
+}
+
+#footer {
+  background: #ccd1d1;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+#footer p {
+  font-size: 12px;
+  color: #424242;
+}
+
+#footer .col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block;
+}
+
+#footer .reds {
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+#footer .red-icon {
+  height: 22px;
+  width: 22px;
+}
+
+#footer .container-a1 {
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 14px;
+  padding-left: 40px;
+}
+
+#footer .container-a2 {
+  margin-left: 15px;
+  margin-top: 20px;
+  padding-left: 40px;
+  font-size: 14px;
+  color: #424242;
+}
+
+#footer .container-a3 {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-left: 40px;
+  font-size: 14px;
+}
+
+#footer .a-f {
+  color: #424242;
+  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+#footer .a-f:hover {
+  background: #b3bbbc;
+  border-radius: 5px;
+  color: navy;
+  text-decoration: none;
+}
+
+#footer .perezoso {
+  height: 100px;
+  width: 65px;
+  position: absolute;
+  top: 1px;
+  right: 60px;
 }
 /*# sourceMappingURL=style.css.map */
