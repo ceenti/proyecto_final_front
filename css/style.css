@@ -23,6 +23,22 @@
   width: 30px;
   margin-top: 7px;
   margin-left: 15px;
+  position: relative;
+}
+
+.img-avatar:hover + .menu-avatar {
+  display: block;
+}
+
+.menu-avatar {
+  position: absolute;
+  display: none;
+  -webkit-transition: all 0.10s ease-in-out;
+  transition: all 0.10s ease-in-out;
+}
+
+li {
+  text-decoration: none;
 }
 
 .form-control {

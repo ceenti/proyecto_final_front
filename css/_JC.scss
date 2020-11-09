@@ -23,7 +23,24 @@
   width: 30px;
   margin-top: 7px;
   margin-left: 15px;
+  position: relative;
+
+  &:hover + .menu-avatar{
+    display: block;
+  }
+
 }
+.menu-avatar{
+  position: absolute;
+  display: none;
+  transition: all 0.10s ease-in-out;
+}
+
+li{
+  text-decoration: none;
+}
+
+
 
 .form-control{
   margin-top: 7px;
@@ -119,6 +136,5 @@
     
   }
 
-
-
 }
+
