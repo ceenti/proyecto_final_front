@@ -6,6 +6,7 @@
 body {
   position: relative;
   background-color: #eef0f1;
+  padding-top: 100px;
 }
 
 header {
@@ -424,6 +425,7 @@ select {
   margin-top: 7px;
   margin-left: 15px;
   position: relative;
+  text-align: center;
 }
 
 .img-avatar:hover + .menu-avatar {
@@ -435,10 +437,13 @@ select {
   display: none;
   -webkit-transition: all 0.10s ease-in-out;
   transition: all 0.10s ease-in-out;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 li {
   text-decoration: none;
+  list-style: none;
 }
 
 .form-control {
@@ -528,5 +533,23 @@ li {
   position: absolute;
   top: 1px;
   right: 60px;
+}
+
+.fixed-top {
+  height: 66px;
+  background-color: white;
+  -webkit-box-align: self-end;
+      -ms-flex-align: self-end;
+          align-items: self-end;
+}
+
+.dropdown-item {
+  background-color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.dropdown-item {
+  width: 150px;
 }
 /*# sourceMappingURL=style.css.map */
