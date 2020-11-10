@@ -1,0 +1,158 @@
+/**
+*
+* Makes working with themeable CSS variables easier.
+*
+* $property: the CSS property to theme.
+* $cssVariable: The CSS variable that will store the themed value.
+* $fallback: The value to use as a fallback but as well for the CSS variable default value.
+*/
+/* Mixin for a load more wrapper, made by a container div and child button */
+/**
+*
+* Generates the src property for @font-face. The mixin is required
+* so that webpack for Storybook and the application can both
+* generate the font URL correctly.
+*
+* $font: the font file name, e.g. 'OpenDyslexic-Regular.otf'
+*/
+#audiocontent {
+  display: none;
+}
+
+*:focus:active {
+  outline: 0;
+}
+
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+.modal-open {
+  margin: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  height: 90vh;
+}
+
+div.field, div.actions {
+  margin-bottom: 5px;
+}
+
+#instantclick {
+  display: none;
+}
+
+.partner-image-dark-mode {
+  display: none !important;
+}
+
+body.night-theme .on-page-nav-butt img,
+body.night-theme .icon-img,
+body.night-theme .reaction-button:not(.reacted) img,
+body.night-theme .image-upload-button button,
+body.night-theme .icon-image,
+body.night-theme .dev-badge,
+body.night-theme .chatchannels__config img,
+body.night-theme .message__actions img,
+body.ten-x-hacker-theme .on-page-nav-butt img,
+body.ten-x-hacker-theme .icon-img,
+body.ten-x-hacker-theme .reaction-button:not(.reacted) img,
+body.ten-x-hacker-theme .image-upload-button button,
+body.ten-x-hacker-theme .icon-image,
+body.ten-x-hacker-theme .dev-badge,
+body.ten-x-hacker-theme .chatchannels__config img,
+body.ten-x-hacker-theme .message__actions img {
+  -webkit-filter: invert(95%);
+  filter: invert(95%);
+}
+
+body.night-theme .ltag__tag,
+body.ten-x-hacker-theme .ltag__tag {
+  border-color: white !important;
+  -webkit-box-shadow: 3px 3px 0px #fff !important;
+          box-shadow: 3px 3px 0px #fff !important;
+}
+
+body.night-theme .partner-image-dark-mode,
+body.ten-x-hacker-theme .partner-image-dark-mode {
+  display: block !important;
+}
+
+body.night-theme .partner-image-light-mode,
+body.ten-x-hacker-theme .partner-image-light-mode {
+  display: none !important;
+}
+
+.broadcast-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+  padding: var(--su-2) var(--su-4);
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: var(--z-sticky);
+}
+
+.static-header .broadcast-wrapper {
+  position: relative;
+}
+
+.broadcast-visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.broadcast-data {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.trusted-visible-block {
+  display: none !important;
+}
+
+body.trusted-status-true .trusted-visible-block {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.app-shell-loader {
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-animation: loading-fadein 1.5s;
+          animation: loading-fadein 1.5s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  font-size: 1.2em;
+  z-index: var(--z-negative);
+}
+
+@-webkit-keyframes loading-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+@keyframes loading-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+/*# sourceMappingURL=scaffolds.css.map */

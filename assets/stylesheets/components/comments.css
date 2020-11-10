@@ -1,0 +1,68 @@
+.crayons-comment {
+  font-size: var(--fs-s);
+  padding: var(--su-2) var(--su-3);
+}
+
+.crayons-comment__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.crayons-comment__meta a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.crayons-comment__body {
+  padding-left: var(--su-7);
+  max-height: 310px;
+  overflow: hidden;
+  position: relative;
+}
+
+.crayons-comment__body a:hover {
+  text-decoration: underline;
+}
+
+.crayons-comment__body p {
+  margin-bottom: var(--su-1);
+}
+
+.crayons-comment__body * {
+  max-width: 100%;
+}
+
+.crayons-comment__body div {
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.crayons-comment__body pre:not(.highlight),
+.crayons-comment__body div.highlight {
+  margin: var(--su-1) auto;
+  font-size: 90%;
+}
+
+.crayons-comment__body::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0) 250px, var(--story-comments-bg));
+}
+
+.crayons-comment + .crayons-comment {
+  margin-top: var(--su-1);
+}
+/*# sourceMappingURL=comments.css.map */

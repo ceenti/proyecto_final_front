@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,aADW,CACX,EAAE,CAAC;EACD,WAAW,EAAE,YAAY;EACzB,OAAO,EAAE,eAAe;CACzB;;AAJH,AAKE,aALW,CAKX,MAAM,CAAC;EACL,MAAM,EAAE,YAAY;CACrB",
+    "sources": [
+        "ReplitTag.scss"
+    ],
+    "names": [],
+    "file": "ReplitTag.css"
+}

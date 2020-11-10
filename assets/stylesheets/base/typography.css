@@ -1,0 +1,316 @@
+/**
+*
+* Makes working with themeable CSS variables easier.
+*
+* $property: the CSS property to theme.
+* $cssVariable: The CSS variable that will store the themed value.
+* $fallback: The value to use as a fallback but as well for the CSS variable default value.
+*/
+/* Mixin for a load more wrapper, made by a container div and child button */
+/**
+*
+* Generates the src property for @font-face. The mixin is required
+* so that webpack for Storybook and the application can both
+* generate the font URL correctly.
+*
+* $font: the font file name, e.g. 'OpenDyslexic-Regular.otf'
+*/
+:root {
+  --content-rythm: var(--su-2);
+  --content-font-size: var(--fs-l);
+  --content-secondary-font-size: var(--fs-base);
+  --content-tertiary-font-size: var(--fs-base);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --content-secondary-font-size: var(--fs-l);
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --content-rythm: var(--su-4);
+    --content-font-size: var(--fs-xl);
+  }
+}
+
+@font-face {
+  font-family: OpenDyslexic;
+  src: font-url("OpenDyslexic-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: OpenDyslexic;
+  src: font-url("OpenDyslexic-Italic.otf");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: OpenDyslexic;
+  src: font-url("OpenDyslexic-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenDyslexic;
+  src: font-url("OpenDyslexic-BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body.serif-article-body {
+  --content-font-family: var(--ff-serif);
+}
+
+body.sans-serif-article-body {
+  --content-font-family: var(--ff-sans-serif);
+}
+
+body.comic-sans-article-body {
+  --content-font-family: var(--ff-comic);
+}
+
+body.monospace-article-body {
+  --content-font-family: var(--ff-monospace);
+}
+
+body.open-dyslexic-article-body {
+  --content-font-family: var(--ff-dyslexic);
+}
+
+.text-styles {
+  font-size: var(--content-font-size);
+  font-family: var(--content-font-family);
+  overflow-wrap: break-word;
+}
+
+.text-styles--secondary {
+  font-size: var(--content-secondary-font-size);
+}
+
+.text-styles--tertiary {
+  font-size: var(--content-tertiary-font-size);
+}
+
+.text-styles a.anchor {
+  padding-top: 0;
+  margin-top: 0;
+  top: -50px;
+  display: block;
+  visibility: hidden;
+  position: relative;
+}
+
+.text-styles h1,
+.text-styles h2,
+.text-styles h3,
+.text-styles h4,
+.text-styles h5,
+.text-styles h6 {
+  font-family: var(--ff-sans-serif);
+  margin: var(--content-rythm) 0;
+  margin-top: calc(var(--content-rythm) * 2);
+  padding: 0;
+}
+
+.text-styles h1 {
+  font-size: 1.85em;
+  line-height: 1.25em;
+  font-weight: 400;
+}
+
+.text-styles h2 {
+  font-size: 1.7em;
+  font-weight: 400;
+  line-height: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+.text-styles h3 {
+  font-size: 1.32em;
+  font-weight: 400;
+}
+
+.text-styles hr {
+  width: 25%;
+  opacity: 0.1;
+  border: 1px solid var(--body-color);
+  margin: 1.3em auto 1.5em;
+}
+
+.text-styles p {
+  margin: var(--content-rythm) 0;
+}
+
+.text-styles ul,
+.text-styles ol {
+  padding-left: var(--su-6);
+  margin: var(--content-rythm) 0;
+}
+
+.text-styles ul br,
+.text-styles ol br {
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.text-styles ul {
+  list-style-type: disc;
+}
+
+.text-styles ul p {
+  margin: 0;
+  padding: 0;
+}
+
+.text-styles ul ul {
+  margin: 0 0.7em 0 1.9em;
+  list-style-type: square;
+}
+
+.text-styles ul ul ul {
+  list-style-type: circle;
+}
+
+.text-styles li {
+  margin: var(--su-2) 0;
+}
+
+.text-styles figure {
+  margin: 0;
+}
+
+.text-styles figcaption {
+  font-style: italic;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  color: var(--body-color);
+  opacity: 0.75;
+  display: block;
+}
+
+.text-styles p + figcaption {
+  margin-top: -0.8em;
+}
+
+.text-styles blockquote {
+  border-left: 4px solid var(--base-50);
+  padding: 0 var(--su-4);
+  margin: var(--content-rythm) 0;
+}
+
+.text-styles blockquote p:first-child {
+  margin: var(--su-2) 0;
+}
+
+.text-styles blockquote.twitter-tweet {
+  font-family: var(--ff-sans-serif);
+  background: var(--body-color-inverted);
+  max-width: 456px;
+  border: 1px solid #e9eef2;
+  font-size: 0.75em;
+  line-height: 1.35em;
+  border-radius: 5px;
+  margin: 1.6em auto;
+  padding: 60px 10px 18px;
+  color: white;
+  min-height: 60px;
+  padding: 33px 15px 8px;
+}
+
+.text-styles blockquote.twitter-tweet a {
+  color: white;
+}
+
+@media screen and (min-width: 640px) {
+  .text-styles blockquote.twitter-tweet {
+    padding: 60px 22px 18px;
+    min-height: 105px;
+  }
+}
+
+.text-styles kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 #959da5;
+          box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.text-styles pre:not(.highlight),
+.text-styles div.highlight {
+  margin: var(--content-rythm) 0;
+}
+
+.text-styles img {
+  height: auto;
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: calc(50vh + 180px);
+  border-radius: var(--radius);
+}
+
+.text-styles a.article-body-image-wrapper {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.text-styles iframe {
+  width: 100%;
+  border: 0;
+  margin: var(--content-rythm) 0;
+}
+
+.text-styles .fluidvids {
+  margin: var(--content-rythm) 0;
+}
+
+.text-styles .fluidvids iframe {
+  margin: 0;
+}
+
+.text-styles .table-wrapper-paragraph {
+  width: 100%;
+  margin-left: 0%;
+  overflow-x: auto;
+}
+
+.text-styles table {
+  border-collapse: collapse;
+  font-size: 0.78em;
+  margin: 0.8em auto 1.2em;
+  table-layout: fixed;
+}
+
+.text-styles table th {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 1vw;
+  background: var(--body-bg);
+  text-align: left;
+}
+
+.text-styles table td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 1vw;
+}
+
+.text-styles .twitter-tweet {
+  margin: auto;
+}
+/*# sourceMappingURL=typography.css.map */

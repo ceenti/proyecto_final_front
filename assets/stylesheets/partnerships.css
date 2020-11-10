@@ -1,0 +1,183 @@
+/**
+*
+* Makes working with themeable CSS variables easier.
+*
+* $property: the CSS property to theme.
+* $cssVariable: The CSS variable that will store the themed value.
+* $fallback: The value to use as a fallback but as well for the CSS variable default value.
+*/
+/* Mixin for a load more wrapper, made by a container div and child button */
+/**
+*
+* Generates the src property for @font-face. The mixin is required
+* so that webpack for Storybook and the application can both
+* generate the font URL correctly.
+*
+* $font: the font file name, e.g. 'OpenDyslexic-Regular.otf'
+*/
+.partnerships-container {
+  width: 800px;
+  max-width: 96%;
+  margin: 100px auto;
+}
+
+.partnerships-container.partnerships-container-show h1 {
+  text-align: left;
+}
+
+.partnerships-container h1 {
+  text-align: center;
+  font-size: 2.5em;
+  padding: 1em 0;
+}
+
+.partnerships-container h1 img {
+  height: 2.2em;
+  width: 2.2em;
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+  border-radius: 0.2em;
+  vertical-align: -0.7em;
+  margin-left: 0.3em;
+}
+
+.partnerships-container .partner-credits-explainer {
+  background: #ffffff;
+  background: var(--theme-container-background, #ffffff);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 20px 30px;
+  border-radius: 12px;
+  margin: 50px auto 40px;
+  width: calc(100% - 20px);
+  border: 1px solid var(--card-color-tertiary);
+  -webkit-box-shadow: 2px 2px 8px #cecece;
+          box-shadow: 2px 2px 8px #cecece;
+  -webkit-box-shadow: var(--theme-container-box-shadow, 2px 2px 8px #cecece);
+          box-shadow: var(--theme-container-box-shadow, 2px 2px 8px #cecece);
+}
+
+.partnerships-container .partner-credits-explainer .partner-explainer-notice {
+  padding: 15px;
+  margin: 25px 0px 12px;
+  border-radius: 3px;
+  font-weight: bold;
+  background: #f5f6f7;
+  background: var(--theme-container-accent-background, #f5f6f7);
+}
+
+.partnerships-container .partner-credits-explainer h4 {
+  font-size: 0.8em;
+  margin: 3px 0px;
+  color: var(--card-color-tertiary);
+}
+
+.partnerships-container .partner-credits-explainer h3 {
+  margin: 5px 0px;
+  font-size: 1.8em;
+  color: #131a38;
+  color: var(--theme-color, #131a38);
+}
+
+.partnerships-container .partner-credits-explainer h3 img {
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: -0.25em;
+  border-radius: 100px;
+  margin-right: 0.3em;
+}
+
+.partnerships-container .partner-credits-explainer select {
+  display: block;
+  font-size: 1.3em;
+}
+
+.partnerships-container .partner-credits-explainer textarea {
+  width: 80%;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 3px;
+  display: block;
+  height: 300px;
+  border: 1px solid #dbdbdb;
+  border: var(--theme-container-border, 1px solid #dbdbdb);
+}
+
+.partnerships-container .partner-credits-explainer input {
+  width: 50%;
+  font-size: 1.3em;
+  padding: 0.5em;
+  border-radius: 3px;
+  display: block;
+  border: 1px solid #dbdbdb;
+  border: var(--theme-container-border, 1px solid #dbdbdb);
+}
+
+.partnerships-container .partner-credits-explainer a,
+.partnerships-container .partner-credits-explainer button {
+  padding: 5px 20px;
+  font-size: 1.5em;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 0px;
+  background: var(--link-brand-color);
+  color: white;
+  color: var(--theme-container-background, white);
+}
+
+.partnerships-container .partnership-options {
+  margin: 40px 0px;
+}
+
+.partnerships-container .partnership-option-card {
+  background: #ffffff;
+  background: var(--theme-container-background, #ffffff);
+  text-align: left;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 10px 0px;
+  display: inline-block;
+  border: 1px solid var(--card-color-tertiary);
+  -webkit-box-shadow: 2px 2px 8px #cecece;
+          box-shadow: 2px 2px 8px #cecece;
+  -webkit-box-shadow: var(--theme-container-box-shadow, 2px 2px 8px #cecece);
+          box-shadow: var(--theme-container-box-shadow, 2px 2px 8px #cecece);
+}
+
+@media screen and (min-width: 820px) {
+  .partnerships-container .partnership-option-card {
+    width: calc(50% - 15px);
+    margin-right: 8px;
+  }
+  .partnerships-container .partnership-option-card ul {
+    height: 220px;
+  }
+}
+
+.partnerships-container .partnership-option-card li {
+  padding: 8px 0px;
+}
+
+.partnerships-container .partnership-option-card h2 {
+  margin: 0px;
+  padding: 10px 0px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.partnerships-container .partnership-option-card .partnership-option-cta {
+  display: block;
+  font-size: 1.6em;
+  padding: 20px 0px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  background: var(--link-brand-color);
+  color: white;
+  color: var(--theme-container-background, white);
+}
+/*# sourceMappingURL=partnerships.css.map */

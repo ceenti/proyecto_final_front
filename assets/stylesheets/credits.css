@@ -1,0 +1,335 @@
+/**
+*
+* Makes working with themeable CSS variables easier.
+*
+* $property: the CSS property to theme.
+* $cssVariable: The CSS variable that will store the themed value.
+* $fallback: The value to use as a fallback but as well for the CSS variable default value.
+*/
+/* Mixin for a load more wrapper, made by a container div and child button */
+/**
+*
+* Generates the src property for @font-face. The mixin is required
+* so that webpack for Storybook and the application can both
+* generate the font URL correctly.
+*
+* $font: the font file name, e.g. 'OpenDyslexic-Regular.otf'
+*/
+.credits-container .notice {
+  background: #66e2d5;
+  padding: 30px 0px;
+  margin-top: 68px;
+  text-align: center;
+}
+
+.credits-container .credits-banner {
+  background-color: #4e57ef;
+  background-image: linear-gradient(141deg, #4e57ef 0%, #1f89db 51%, #2981e5 75%);
+  padding: 70px 5px;
+}
+
+.credits-container .credits-banner h1 {
+  font-size: calc(1.4em + 0.5vw);
+}
+
+.credits-container .credits-banner a {
+  color: white;
+  border: 3px solid white;
+  padding: 15px 4px;
+  border-radius: 100px;
+  font-weight: bold;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 14px;
+  width: 320px;
+}
+
+@media screen and (min-width: 950px) {
+  .credits-container .credits-banner {
+    font-size: 1.8em;
+  }
+}
+
+.credits-container form#new_credit {
+  width: 500px;
+  max-width: 96%;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.credits-container .InputElement {
+  background-color: white;
+  background-color: var(--theme-container-background, white);
+  color: var(--body-color);
+}
+
+.credits-container .StripeElement,
+.credits-container input[type='number'],
+.credits-container button,
+.credits-container .existing-card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  background-color: var(--theme-container-background, white);
+  color: var(--body-color);
+  -webkit-box-shadow: 0 1px 3px 0 #e6ebf1;
+          box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  -webkit-transition: -webkit-box-shadow 150ms ease;
+  transition: -webkit-box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
+  margin-bottom: 20px;
+}
+
+.credits-container .StripeElement--focus {
+  -webkit-box-shadow: 0 1px 3px 0 #cfd7df;
+          box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.credits-container .StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.credits-container .StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.credits-container h1 {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 2.5em;
+  border-radius: 3px;
+  padding: 30px 0px;
+  color: white;
+}
+
+.credits-container .hook-description {
+  color: #32325d;
+  color: var(--theme-secondary-color, #32325d);
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px 5px;
+}
+
+.credits-container .hook-description a {
+  text-decoration: underline;
+  color: var(--link-brand-color);
+}
+
+@media screen and (min-width: 950px) {
+  .credits-container .hook-description {
+    font-size: 1.4em;
+    padding: 20px 5px;
+  }
+}
+
+.credits-container .bulk-description {
+  text-align: center;
+  color: var(--card-color-tertiary);
+  padding: 25px 12px;
+  font-size: 0.8em;
+  border-top: 1px solid #ededed;
+  border-top: var(--theme-container-border, 1px solid #ededed);
+  border-bottom: 1px solid #ededed;
+  border-bottom: var(--theme-container-border, 1px solid #ededed);
+}
+
+.credits-container .credit-price {
+  -webkit-box-shadow: 0 2px 4px 0 #dce2ea;
+          box-shadow: 0 2px 4px 0 #dce2ea;
+  border-radius: 8px;
+  width: 80%;
+  margin: 3px auto;
+  padding: 10px 0px;
+  border: 1px solid #f5f6f7;
+  background: var(--card-bg);
+  font-weight: bold;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.credits-container .credit-price .credit-amount {
+  font-size: 45px;
+  color: #4e57ef;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 950px) {
+  .credits-container .credit-price {
+    width: 230px;
+    padding: 80px 0px;
+    margin: 12px 3px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .credits-container .credit-price:hover {
+    -webkit-box-shadow: 0 4px 6px 0 #d5dce5;
+            box-shadow: 0 4px 6px 0 #d5dce5;
+  }
+}
+
+.credits-container details {
+  width: 500px;
+  max-width: 96%;
+  margin: 20px auto 0px;
+  cursor: pointer;
+  font-size: 0.8em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: var(--link-brand-color);
+}
+
+.credits-container details div {
+  margin-top: 5px;
+  background: var(--card-bg);
+  padding: 10px 15px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 3px 0 #cfd7df;
+          box-shadow: 0 1px 3px 0 #cfd7df;
+  border: 1px solid #f5f6f7;
+}
+
+.credits-container input[type='number'] {
+  width: calc(100% - 160px);
+  font-size: 18px;
+  display: inline-block;
+}
+
+.credits-container #calculated-price {
+  width: 140px;
+  padding-left: 10px;
+  color: #66e2d5;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.credits-container input[type='radio'] {
+  vertical-align: 2px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.credits-container button {
+  width: 100%;
+  background-color: #4e57ef;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.credits-container button#add-new-card {
+  background-color: #f5f6f7;
+  background-color: var(--theme-container-background, #f5f6f7);
+  color: var(--body-color);
+  font-size: 15px;
+}
+
+.credits-container .existing-card {
+  margin-bottom: 5px;
+  font-size: 0.7em;
+  padding: 0px;
+  padding-left: 10px;
+}
+
+.credits-container .existing-card label {
+  cursor: pointer;
+  display: inline-block;
+  width: calc(100% - 50px);
+  padding: 10px 0px;
+}
+
+.credits-container .existing-card .credit-card-component {
+  background: #f9fafa;
+  background: var(--theme-container-accent-background, #f9fafa);
+  border-radius: 3px;
+  margin: 0px 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.credits-container label.main-form-label {
+  margin-bottom: 4px;
+  background: #f5f6f7;
+  background: var(--theme-container-accent-background, #f5f6f7);
+  border-radius: 3px;
+  padding: 2px 8px;
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.credits-container .existing-credits {
+  background: #4e57ef;
+  color: white;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.credits-container .existing-credits .existing-credits-status {
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 30px 0px 50px;
+}
+
+.credits-container .existing-credits .existing-credits-status .org-credits-select {
+  vertical-align: middle;
+  font-size: initial;
+}
+
+.credits-container .existing-credits > a {
+  color: white;
+  border: 3px solid white;
+  padding: 10px 30px;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 950px) {
+  .credits-container .existing-credits {
+    width: 800px;
+  }
+}
+
+.credits-container .ledger {
+  margin: 2rem auto;
+  text-align: right;
+}
+
+.credits-container .ledger caption {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.credits-container .ledger td {
+  padding-top: 1.1rem;
+}
+
+.credits-container .ledger .misc td {
+  padding-top: 1.5rem;
+}
+
+.credits-container .ledger .misc td:nth-child(2) {
+  font-style: italic;
+}
+
+.credits-container .ledger a {
+  color: #fff;
+}
+
+@media screen and (min-width: 950px) {
+  .credits-container .ledger {
+    width: 700px;
+  }
+}
+/*# sourceMappingURL=credits.css.map */

@@ -1,0 +1,75 @@
+.ltag__user-subscription-tag__container {
+  background: var(--card-bg);
+  border: 2px solid var(--card-color);
+  -webkit-box-shadow: 2px 2px 0 var(--card-color);
+          box-shadow: 2px 2px 0 var(--card-color);
+  color: var(--card-color);
+  border-radius: var(--radius);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: var(--su-4);
+}
+
+@media screen and (min-width: 768px) {
+  .ltag__user-subscription-tag__container {
+    padding: var(--su-6);
+  }
+}
+
+.ltag__user-subscription-tag__signed-in {
+  color: var(--base-70);
+}
+
+.ltag__user-subscription-tag__profile-images.signed-in {
+  margin: 0 auto var(--su-4);
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+
+.ltag__user-subscription-tag__profile-images.signed-in .ltag__user-subscription-tag__author-profile-image,
+.ltag__user-subscription-tag__profile-images.signed-in .ltag__user-subscription-tag__subscriber-profile-image {
+  display: block;
+}
+
+.ltag__user-subscription-tag__profile-images.signed-out {
+  height: auto;
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ltag__user-subscription-tag__profile-images.signed-out .ltag__user-subscription-tag__author-profile-image {
+  margin: 0 auto var(--su-4);
+}
+
+.ltag__user-subscription-tag__profile-images.signed-out .ltag__user-subscription-tag__subscriber-profile-image {
+  display: none;
+}
+
+.ltag__user-subscription-tag__profile-images img {
+  border-radius: 100%;
+}
+
+.ltag__user-subscription-tag__subscriber-profile-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-box-shadow: 0 0 0 4px var(--body-color-inverted);
+          box-shadow: 0 0 0 4px var(--body-color-inverted);
+}
+
+#user-subscription-confirmation-modal .crayons-modal__box__header {
+  padding: var(--su-2) var(--su-4);
+}
+
+#user-subscription-confirmation-modal .crayons-modal__box__body {
+  padding: var(--su-6);
+}
+/*# sourceMappingURL=UserSubscriptionTag.css.map */

@@ -1,0 +1,49 @@
+.crayons-snackbar {
+  position: fixed;
+  z-index: var(--z-popover);
+  left: var(--su-2);
+  right: var(--su-2);
+  bottom: var(--su-2);
+  display: -ms-grid;
+  display: grid;
+  grid-gap: var(--su-2);
+}
+
+@media (min-width: 640px) {
+  .crayons-snackbar {
+    max-width: 480px;
+    width: auto;
+    left: var(--su-6);
+    right: auto;
+    bottom: var(--su-6);
+    justify-items: flex-start;
+  }
+}
+
+.crayons-snackbar__item {
+  background: var(--snackbar-bg);
+  border: 2px solid var(--snackbar-border);
+  -webkit-box-shadow: 2px 2px 0 var(--snackbar-border);
+          box-shadow: 2px 2px 0 var(--snackbar-border);
+  color: var(--snackbar-color);
+  border-radius: var(--radius);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: var(--su-2);
+}
+
+.crayons-snackbar__body {
+  padding: 0 var(--su-2);
+}
+
+.crayons-snackbar__actions {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-left: var(--su-2);
+}
+/*# sourceMappingURL=snackbars.css.map */

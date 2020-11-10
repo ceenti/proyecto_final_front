@@ -1,0 +1,46 @@
+.crayons-tooltip[data-tooltip] {
+  position: relative;
+}
+
+.crayons-tooltip[data-tooltip]:after {
+  all: unset;
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background: var(--base-a90);
+  color: var(--base-inverted);
+  font-size: var(--fs-s);
+  padding: var(--su-2) var(--su-3);
+  max-width: 256px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: var(--radius);
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-tight);
+  -webkit-transform: translateY(var(--su-1));
+          transform: translateY(var(--su-1));
+  opacity: 0;
+  -webkit-transition: all var(--transition-props);
+  transition: all var(--transition-props);
+  text-align: left;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+  z-index: var(--z-popover);
+  pointer-events: none;
+}
+
+.crayons-tooltip[data-tooltip]:hover {
+  z-index: var(--z-popover);
+}
+
+.crayons-tooltip[data-tooltip]:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(calc(-1 * var(--su-1)));
+          transform: translateY(calc(-1 * var(--su-1)));
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+/*# sourceMappingURL=tooltips.css.map */

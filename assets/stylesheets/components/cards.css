@@ -1,0 +1,57 @@
+.crayons-card {
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  color: var(--card-color);
+  -webkit-box-shadow: 0 0 0 1px var(--card-border);
+          box-shadow: 0 0 0 1px var(--card-border);
+  overflow-wrap: anywhere;
+}
+
+.crayons-card--secondary {
+  background: var(--card-secondary-bg);
+  color: var(--card-secondary-color);
+  -webkit-box-shadow: 0 0 0 1px var(--card-secondary-border);
+          box-shadow: 0 0 0 1px var(--card-secondary-border);
+}
+
+.crayons-card--elevated {
+  -webkit-box-shadow: 0 0 0 1px var(--card-secondary-border), 0 1px 3px var(--base-a5), 0 3px 9px var(--base-a5);
+          box-shadow: 0 0 0 1px var(--card-secondary-border), 0 1px 3px var(--base-a5), 0 3px 9px var(--base-a5);
+}
+
+.crayons-card--content-rows {
+  padding: var(--su-4);
+  margin-bottom: var(--su-4);
+  grid-gap: var(--su-4);
+  display: -ms-grid;
+  display: grid;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .crayons-card--content-rows {
+    padding: var(--su-6);
+    margin-bottom: var(--su-6);
+    grid-gap: var(--su-6);
+    border-radius: var(--radius);
+  }
+}
+
+.crayons-card__header {
+  padding: var(--su-3) var(--su-4);
+  border-bottom: 1px solid var(--body-bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.crayons-card__body {
+  padding: var(--su-4);
+}
+/*# sourceMappingURL=cards.css.map */

@@ -1,0 +1,46 @@
+.crayons-notice {
+  padding: var(--su-4);
+  background: var(--card-bg);
+  border: 2px solid var(--card-color);
+  -webkit-box-shadow: 2px 2px 0 var(--card-color);
+          box-shadow: 2px 2px 0 var(--card-color);
+  color: var(--card-color);
+  border-radius: var(--radius);
+}
+
+.crayons-notice--danger {
+  background: var(--accent-danger-a10);
+  border: 2px solid var(--accent-danger);
+  -webkit-box-shadow: 2px 2px 0 var(--accent-danger);
+          box-shadow: 2px 2px 0 var(--accent-danger);
+  color: var(--card-color);
+  border-radius: var(--radius);
+}
+
+.crayons-notice--warning {
+  background: var(--accent-warning-a10);
+  border: 2px solid var(--accent-warning);
+  -webkit-box-shadow: 2px 2px 0 var(--accent-warning);
+          box-shadow: 2px 2px 0 var(--accent-warning);
+  color: var(--card-color);
+  border-radius: var(--radius);
+}
+
+.crayons-notice--success {
+  background: var(--accent-success-a10);
+  border: 2px solid var(--accent-success);
+  -webkit-box-shadow: 2px 2px 0 var(--accent-success);
+          box-shadow: 2px 2px 0 var(--accent-success);
+  color: var(--card-color);
+  border-radius: var(--radius);
+}
+
+.crayons-notice--info {
+  background: var(--accent-brand-a10);
+  border: 2px solid var(--accent-brand);
+  -webkit-box-shadow: 2px 2px 0 var(--accent-brand);
+          box-shadow: 2px 2px 0 var(--accent-brand);
+  color: var(--card-color);
+  border-radius: var(--radius);
+}
+/*# sourceMappingURL=notices.css.map */

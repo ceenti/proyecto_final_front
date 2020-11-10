@@ -1,0 +1,252 @@
+.crayons-avatar {
+  display: inline-block;
+  border-radius: 100%;
+  position: relative;
+  background-color: var(--card-color-tertiary);
+  width: var(--su-6);
+  height: var(--su-6);
+}
+
+.crayons-avatar__image {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.crayons-avatar::after {
+  content: '';
+  border: 1px solid var(--body-color);
+  opacity: 0.15;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+  pointer-events: none;
+}
+
+.crayons-avatar--l {
+  width: var(--su-7);
+  height: var(--su-7);
+}
+
+.crayons-avatar--xl {
+  width: var(--su-8);
+  height: var(--su-8);
+}
+
+.crayons-avatar--2xl {
+  width: var(--su-9);
+  height: var(--su-9);
+}
+
+.crayons-avatar--3xl {
+  width: var(--su-10);
+  height: var(--su-10);
+}
+
+@media (min-width: 640px) {
+  .s\:crayons-avatar--l {
+    width: var(--su-7);
+    height: var(--su-7);
+  }
+  .s\:crayons-avatar--xl {
+    width: var(--su-8);
+    height: var(--su-8);
+  }
+  .s\:crayons-avatar--2xl {
+    width: var(--su-9);
+    height: var(--su-9);
+  }
+  .s\:crayons-avatar--3xl {
+    width: var(--su-10);
+    height: var(--su-10);
+  }
+}
+
+@media (min-width: 768px) {
+  .m\:crayons-avatar--l {
+    width: var(--su-7);
+    height: var(--su-7);
+  }
+  .m\:crayons-avatar--xl {
+    width: var(--su-8);
+    height: var(--su-8);
+  }
+  .m\:crayons-avatar--2xl {
+    width: var(--su-9);
+    height: var(--su-9);
+  }
+  .m\:crayons-avatar--3xl {
+    width: var(--su-10);
+    height: var(--su-10);
+  }
+}
+
+@media (min-width: 1024px) {
+  .l\:crayons-avatar--l {
+    width: var(--su-7);
+    height: var(--su-7);
+  }
+  .l\:crayons-avatar--xl {
+    width: var(--su-8);
+    height: var(--su-8);
+  }
+  .l\:crayons-avatar--2xl {
+    width: var(--su-9);
+    height: var(--su-9);
+  }
+  .l\:crayons-avatar--3xl {
+    width: var(--su-10);
+    height: var(--su-10);
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:crayons-avatar--l {
+    width: var(--su-7);
+    height: var(--su-7);
+  }
+  .xl\:crayons-avatar--xl {
+    width: var(--su-8);
+    height: var(--su-8);
+  }
+  .xl\:crayons-avatar--2xl {
+    width: var(--su-9);
+    height: var(--su-9);
+  }
+  .xl\:crayons-avatar--3xl {
+    width: var(--su-10);
+    height: var(--su-10);
+  }
+}
+
+.crayons-logo {
+  display: inline-block;
+  border-radius: var(--radius);
+  position: relative;
+  background-color: var(--body-color-inverted);
+  width: var(--su-6);
+  height: var(--su-6);
+}
+
+.crayons-logo__image {
+  border-radius: var(--radius);
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.crayons-logo::after {
+  content: '';
+  border: 1px solid var(--body-color);
+  opacity: 0.15;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: var(--radius);
+  pointer-events: none;
+}
+
+.crayons-logo--l {
+  width: var(--su-7);
+  height: var(--su-7);
+}
+
+.crayons-logo--xl {
+  width: var(--su-8);
+  height: var(--su-8);
+}
+
+.crayons-logo--2xl {
+  width: var(--su-9);
+  height: var(--su-9);
+}
+
+.crayons-logo--3xl {
+  width: var(--su-10);
+  height: var(--su-10);
+}
+
+@media (min-width: 640px) {
+  .s\:crayons-logo--l {
+    width: var(--su-7);
+    height: var(--su-7);
+  }
+  .s\:crayons-logo--xl {
+    width: var(--su-8);
+    height: var(--su-8);
+  }
+  .s\:crayons-logo--2xl {
+    width: var(--su-9);
+    height: var(--su-9);
+  }
+  .s\:crayons-logo--3xl {
+    width: var(--su-10);
+    height: var(--su-10);
+  }
+}
+
+@media (min-width: 768px) {
+  .m\:crayons-logo--l {
+    width: var(--su-7);
+    height: var(--su-7);
+  }
+  .m\:crayons-logo--xl {
+    width: var(--su-8);
+    height: var(--su-8);
+  }
+  .m\:crayons-logo--2xl {
+    width: var(--su-9);
+    height: var(--su-9);
+  }
+  .m\:crayons-logo--3xl {
+    width: var(--su-10);
+    height: var(--su-10);
+  }
+}
+
+@media (min-width: 1024px) {
+  .l\:crayons-logo--l {
+    width: var(--su-7);
+    height: var(--su-7);
+  }
+  .l\:crayons-logo--xl {
+    width: var(--su-8);
+    height: var(--su-8);
+  }
+  .l\:crayons-logo--2xl {
+    width: var(--su-9);
+    height: var(--su-9);
+  }
+  .l\:crayons-logo--3xl {
+    width: var(--su-10);
+    height: var(--su-10);
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:crayons-logo--l {
+    width: var(--su-7);
+    height: var(--su-7);
+  }
+  .xl\:crayons-logo--xl {
+    width: var(--su-8);
+    height: var(--su-8);
+  }
+  .xl\:crayons-logo--2xl {
+    width: var(--su-9);
+    height: var(--su-9);
+  }
+  .xl\:crayons-logo--3xl {
+    width: var(--su-10);
+    height: var(--su-10);
+  }
+}
+/*# sourceMappingURL=avatars.css.map */

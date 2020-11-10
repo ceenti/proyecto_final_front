@@ -1,0 +1,55 @@
+/**
+*
+* Makes working with themeable CSS variables easier.
+*
+* $property: the CSS property to theme.
+* $cssVariable: The CSS variable that will store the themed value.
+* $fallback: The value to use as a fallback but as well for the CSS variable default value.
+*/
+/* Mixin for a load more wrapper, made by a container div and child button */
+/**
+*
+* Generates the src property for @font-face. The mixin is required
+* so that webpack for Storybook and the application can both
+* generate the font URL correctly.
+*
+* $font: the font file name, e.g. 'OpenDyslexic-Regular.otf'
+*/
+.crayons-article__video {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.crayons-article__video .crayons-article__video__player {
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 56.25%;
+}
+
+.crayons-article__video .crayons-article__video__player.native {
+  height: calc(100vw * (9 / 16));
+}
+
+.crayons-article__video .crayons-article__video__player img {
+  display: none;
+  width: calc(100vw * (9 / 16) * (1 / 2));
+  height: calc((100vw * (9 / 16) * (1 / 2)) + (100vw * (9 / 16) * (1 / 6)));
+  padding-top: calc(100vw * (9 / 16) * (1 / 6));
+  margin: 0 auto;
+}
+
+.crayons-article__video .crayons-article__video__player img.active {
+  display: block;
+}
+
+@media screen and (min-width: 640px) {
+  .crayons-article__video .crayons-article__video__player.native {
+    height: calc(100vw * (9 / 16) * (2 / 3));
+  }
+  .crayons-article__video .crayons-article__video__player img {
+    width: calc(100vw * (9 / 16) * (1 / 2) * (2 / 3));
+    height: calc( (100vw * (9 / 16) * (1 / 2) * (2 / 3)) + (100vw * (9 / 16) * (1 / 6) * (2 / 3)));
+    padding-top: calc(100vw * (9 / 16) * (1 / 6) * (2 / 3));
+  }
+}
+/*# sourceMappingURL=video-player.css.map */

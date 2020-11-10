@@ -1,0 +1,278 @@
+/**
+*
+* Makes working with themeable CSS variables easier.
+*
+* $property: the CSS property to theme.
+* $cssVariable: The CSS variable that will store the themed value.
+* $fallback: The value to use as a fallback but as well for the CSS variable default value.
+*/
+/* Mixin for a load more wrapper, made by a container div and child button */
+/**
+*
+* Generates the src property for @font-face. The mixin is required
+* so that webpack for Storybook and the application can both
+* generate the font URL correctly.
+*
+* $font: the font file name, e.g. 'OpenDyslexic-Regular.otf'
+*/
+.dashboard-listings-container {
+  width: 800px;
+  max-width: 96%;
+  margin: 24px auto;
+}
+
+.dashboard-listings-container .rounded-btn {
+  font-size: calc(15px + 0.2vw);
+  font-family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosCnBold", "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
+  font-stretch: condensed;
+  padding: 4px 20px;
+  border-radius: 100px;
+  margin-right: 5px;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  margin-bottom: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: var(--body-color);
+  background: #e8e8e8;
+  background: var(--theme-container-background, #e8e8e8);
+}
+
+.dashboard-listings-container .rounded-btn:hover {
+  background: #dbdbdb;
+  background: var(--theme-container-background-hover, #dbdbdb);
+}
+
+.dashboard-listings-container .rounded-btn.active {
+  background: var(--card-color-tertiary);
+  color: var(--body-color-inverted);
+}
+
+.dashboard-listings-container .dashboard-listings-header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+  background: #333333;
+  padding: 15px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-listings-container .dashboard-listings-header-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.dashboard-listings-container .dashboard-listings-header-wrapper .dashboard-listings-header {
+  width: 43%;
+  text-align: center;
+  color: white;
+  margin: 5px auto;
+  font-size: calc(1.1em + 0.1vw);
+  padding: 18px 0px 7px;
+  padding-left: 10px;
+  font-family: var(--ff-monospace);
+  border: 1px solid #f5f6f7;
+  display: block;
+  text-align: center;
+  margin: 1.2%;
+  padding: 1.2%;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-listings-container .dashboard-listings-header-wrapper .dashboard-listings-header {
+    width: 90%;
+  }
+}
+
+.dashboard-listings-container .dashboard-listings-header-wrapper .dashboard-listings-header a {
+  font-size: 0.9em;
+  border: 2px solid #2ad7c5;
+  color: #25c2b2;
+  padding: 6px 16px;
+  margin-top: 6px;
+  border-radius: 100px;
+}
+
+.dashboard-listings-container .dashboard-listings-actions {
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-listings-container .dashboard-listings-actions .listings-dashboard-filter-buttons {
+  margin-bottom: -10px;
+}
+
+@media screen and (max-width: 426px) {
+  .dashboard-listings-container .dashboard-listings-actions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+.dashboard-listings-container .dashboard-listings-actions select {
+  display: block;
+  font-size: 19px;
+  padding: 12px;
+  border: 1px solid #dee6e9;
+  border-radius: 3px;
+  background-color: white;
+  outline: none;
+  font-weight: bold;
+  color: #333333;
+  font-family: 'HelveticaNeue-CondensedBold', 'HelveticaNeueBoldCondensed', 'HelveticaNeue-Bold-Condensed', 'Helvetica Neue Bold Condensed', 'HelveticaNeueBold', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'HelveticaNeue', 'Helvetica Neue', 'TeXGyreHerosCnBold', 'Helvetica', 'Tahoma', 'Geneva', 'Arial Narrow', 'Arial', sans-serif;
+}
+
+@media screen and (max-width: 426px) {
+  .dashboard-listings-container .dashboard-listings-actions select {
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    text-align-last: center;
+  }
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row {
+  border: 1px solid var(--card-color-tertiary);
+  padding: 5px 15px;
+  margin-bottom: 13px;
+  border-radius: 3px;
+  position: relative;
+  background: var(--card-bg);
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row.draft {
+  background: var(--theme-container-accent-background, #fffeec);
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row.expired {
+  opacity: 0.7;
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .listing-org {
+  background: var(--card-color-secondary);
+  color: var(--body-color-inverted);
+  margin-right: 5px;
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row h2 {
+  color: var(--card-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  font-size: 22px;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .dashboard-listings-container .dashboard-listings-view .dashboard-listing-row h2 {
+    font-size: 34px;
+  }
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .dashboard-listing-date {
+  font-size: 0.85em;
+  padding: 3px 0px 6px;
+  color: var(--card-color-tertiary);
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .dashboard-listing-category {
+  padding: 10px 15px;
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .dashboard-listing-category a {
+  color: var(--card-color-tertiary);
+  background: var(--card-bg);
+  display: inline-block;
+  margin: 2px;
+  padding: 2px 7px;
+  font-size: 0.77em;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .dashboard-listing-tags {
+  font-size: 0.85em;
+  padding: 3px 0px 6px;
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .dashboard-listing-tags a {
+  color: var(--card-color);
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .listing-row-actions {
+  padding: var(--su-2) 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--su-2);
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .listing-row-actions .pill {
+  background: #0045ff;
+  padding: 4px 20px;
+  border-radius: 100px;
+  color: white;
+  margin-right: 5px;
+  font-size: 14px;
+  border: 2px solid transparent;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .listing-row-actions .pill.green {
+  background: #66e2d5;
+  color: #0a0a0a;
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .listing-row-actions .pill.yellow {
+  background: #fefa87;
+  color: #0a0a0a;
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .listing-row-actions .pill.red {
+  background: #ff0000;
+}
+
+.dashboard-listings-container .dashboard-listings-view .dashboard-listing-row .listing-row-actions .pill.black {
+  background: #333333;
+}
+/*# sourceMappingURL=listings.css.map */

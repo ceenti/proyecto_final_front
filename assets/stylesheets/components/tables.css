@@ -1,0 +1,109 @@
+.crayons-table {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: inherit;
+  border-spacing: 0;
+  border-color: inherit;
+  vertical-align: inherit;
+  text-align: left;
+  font-weight: inherit;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+}
+
+.crayons-table td,
+.crayons-table th {
+  padding: var(--su-2);
+}
+
+@media (min-width: 768px) {
+  .crayons-table td,
+  .crayons-table th {
+    padding: var(--su-3);
+  }
+}
+
+@media (min-width: 1024px) {
+  .crayons-table td,
+  .crayons-table th {
+    padding: var(--su-4);
+  }
+}
+
+.crayons-table--compact td,
+.crayons-table--compact th {
+  padding: var(--su-2);
+}
+
+@media (min-width: 768px) {
+  .crayons-table--compact td,
+  .crayons-table--compact th {
+    padding: var(--su-2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .crayons-table--compact td,
+  .crayons-table--compact th {
+    padding: var(--su-2);
+  }
+}
+
+.crayons-table td {
+  -webkit-transition: background var(--transition-props);
+  transition: background var(--transition-props);
+  border-bottom: 1px solid var(--body-bg);
+}
+
+.crayons-table thead {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.crayons-table th {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+  color: var(--base-60);
+}
+
+.crayons-table th:first-child {
+  border-radius: var(--radius) 0 0 0;
+}
+
+.crayons-table th:last-child {
+  border-radius: 0 var(--radius) 0 0;
+}
+
+.crayons-table tbody tr:first-child td:first-child {
+  border-radius: var(--radius) 0 0 0;
+}
+
+.crayons-table tbody tr:first-child td:last-child {
+  border-radius: 0 var(--radius) 0 0;
+}
+
+.crayons-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.crayons-table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 var(--radius);
+}
+
+.crayons-table tbody tr:last-child td:last-child {
+  border-radius: 0 0 var(--radius) 0;
+}
+
+.crayons-table tbody tr:only-child td:first-child {
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.crayons-table tbody tr:only-child td:last-child {
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.crayons-table tbody tr:hover td {
+  background: var(--card-secondary-bg);
+}
+/*# sourceMappingURL=tables.css.map */

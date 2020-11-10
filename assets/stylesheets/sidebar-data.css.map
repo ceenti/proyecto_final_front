@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA;;;;;;;EAOE;AAMF,6EAA6E;AA4C7E;;;;;;;EAOE;AF7DF,AAAA,aAAa,CAAC;EACZ,aAAa,EAAE,GAAG;EAClB,WAAW,EAAE,IAAI;EACjB,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,mBAAmB;EAChC,OAAO,EAAE,IAAI;EECb,KAAY,EAAC,OAAC;EACd,KAAY,EAAE,qCAAsC;EFApD,KAAK,EAAE,0BAA0B;CAalC;;AApBD,AAQE,aARW,CAQX,EAAE,CAAC;EACD,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,aAAa;EACrB,KAAK,EAAE,KAAK;CACb;;AAZH,AAaE,aAbW,CAaX,kBAAkB,CAAC;EACjB,aAAa,EAAE,GAAG;CACnB;;AAfH,AAgBE,aAhBW,CAgBX,sBAAsB,CAAC;EACrB,OAAO,EAAE,GAAG;EACZ,YAAY,EAAE,IAAI;CACnB",
+    "sources": [
+        "sidebar-data.scss",
+        "variables.scss",
+        "_mixins.scss"
+    ],
+    "names": [],
+    "file": "sidebar-data.css"
+}

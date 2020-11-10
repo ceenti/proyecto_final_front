@@ -1,0 +1,10 @@
+.crayons-icon {
+  vertical-align: bottom;
+  -moz-transform: rotate(360deg);
+}
+
+.crayons-icon:not(.crayons-icon--default),
+.crayons-icon:not(.crayons-icon--default) * {
+  fill: currentColor;
+}
+/*# sourceMappingURL=icons.css.map */

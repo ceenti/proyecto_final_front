@@ -1,0 +1,112 @@
+body {
+  background: var(--body-bg);
+  color: var(--body-color);
+  font-family: var(--ff-sans-serif);
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+body.hidden-shell {
+  padding-top: 0 !important;
+}
+
+body.hidden-shell .crayons-header,
+body.hidden-shell .crayons-footer {
+  display: none;
+}
+
+body.user-tags-followed-0 #sidebar-nav-followed-tags, body.user-tags-followed-1 #sidebar-nav-followed-tags, body.user-tags-followed-2 #sidebar-nav-followed-tags {
+  height: 90px;
+}
+
+body.user-tags-followed-3 #sidebar-nav-followed-tags, body.user-tags-followed-4 #sidebar-nav-followed-tags, body.user-tags-followed-5 #sidebar-nav-followed-tags {
+  height: 205px;
+}
+
+body.user-tags-followed-max #sidebar-nav-followed-tags {
+  height: 42vh;
+}
+
+body.default-header {
+  padding-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  visibility: visible;
+  font-size: 18px;
+}
+
+a {
+  color: var(--link-brand-color);
+  text-decoration: none;
+}
+
+.site-logo {
+  max-width: var(--max-width, 125px);
+  font-size: var(--font-size, var(--fs-base));
+  font-weight: var(--font-weight, var(--fw-medium));
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  color: var(--base-100);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  line-height: var(--lh-tight);
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 640px) {
+  .site-logo {
+    --max-width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-logo {
+    --max-width: 175px;
+    --font-size: var(--fs-l);
+    --font-weight: var(--fw-bold);
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-logo {
+    --max-width: 200px;
+    --font-size: var(--fs-xl);
+  }
+}
+
+.site-logo:hover {
+  color: var(--base-80);
+  text-decoration: none;
+}
+
+.site-logo svg {
+  max-width: 100%;
+  width: auto;
+  height: calc(var(--header-height) - var(--su-2) * 2);
+  vertical-align: middle;
+  display: inline-block;
+}
+/*# sourceMappingURL=main.css.map */

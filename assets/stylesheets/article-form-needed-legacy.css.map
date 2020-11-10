@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA;;;;;;;EAOE;AAMF,6EAA6E;AA4C7E;;;;;;;EAOE;AF7DF,AAAA,kBAAkB,CAAC;EACjB,UAAU,ECaN,OAAO;EDZX,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,oBAAoB;EACjC,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,eAAe;EACvB,QAAQ,EAAE,QAAQ;CAgBnB;;AAvBD,AASE,kBATgB,CAShB,EAAE,CAAC;EACD,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,KAAK;CACf;;AAZH,AAcE,kBAdgB,CAchB,EAAE,CAAC;EACD,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,SAAS;CAKlB;;AAtBH,AAmBI,kBAnBc,CAchB,EAAE,CAKA,EAAE,CAAC;EACD,MAAM,EAAE,QAAQ;CACjB",
+    "sources": [
+        "article-form-needed-legacy.scss",
+        "variables.scss",
+        "_mixins.scss"
+    ],
+    "names": [],
+    "file": "article-form-needed-legacy.css"
+}

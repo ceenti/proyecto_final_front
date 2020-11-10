@@ -1,0 +1,104 @@
+.comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-form__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: var(--su-3);
+  background-color: var(--form-bg);
+  border: 1px solid var(--form-border);
+  color: var(--body-color);
+  border-radius: var(--radius);
+  -webkit-transition: all var(--transition-props);
+  transition: all var(--transition-props);
+}
+
+.comment-form__field:focus-within {
+  background-color: var(--form-bg-focus);
+  border-color: var(--form-border-focus);
+  -webkit-box-shadow: 1px 1px 0 var(--form-border-focus);
+          box-shadow: 1px 1px 0 var(--form-border-focus);
+}
+
+.comment-form__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+}
+
+.comment-form .comment-textarea {
+  resize: vertical;
+  padding: 0.5em;
+  max-height: 40vh;
+}
+
+.comment-form__toolbar, .comment-form__buttons {
+  display: none;
+}
+
+.comment-form--initiated .comment-textarea {
+  height: 128px;
+}
+
+.comment-form--initiated .comment-form__toolbar,
+.comment-form--initiated .comment-form__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-form__toolbar {
+  padding: var(--su-1);
+  border-top: 1px solid var(--base-20);
+  background: var(--form-bg);
+  border-radius: 0 0 var(--radius) var(--radius);
+  font-size: var(--fs-s);
+}
+
+.comment-form__preview {
+  border-radius: var(--radius);
+  padding: var(--su-4);
+  border: 1px solid var(--base-20);
+  margin-bottom: var(--su-3);
+  background: var(--card-bg);
+}
+
+.inner-comment.replying .actions,
+.inner-comment.replying .reaction-button {
+  display: none;
+}
+
+.inner-comment .comment-form {
+  margin: var(--su-6) var(--su-4) 0 var(--su-4);
+}
+
+.comment-form .comment-form__preview {
+  display: none;
+}
+
+.comment-form.preview-open .comment-form__preview {
+  display: block;
+}
+
+.comment-form.preview-open .comment-form__field {
+  display: none;
+}
+/*# sourceMappingURL=comments.css.map */

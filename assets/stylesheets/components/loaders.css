@@ -1,0 +1,44 @@
+.crayons-scaffold {
+  border-radius: var(--radius);
+  background: var(--body-color);
+  opacity: 0.025;
+}
+
+.crayons-scaffold-loading {
+  border-radius: var(--radius);
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(255, 255, 255, 0.1)), color-stop(25%, rgba(0, 0, 0, 0.05)), color-stop(40%, rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 10%, rgba(0, 0, 0, 0.05) 25%, rgba(255, 255, 255, 0.1) 40%);
+  -webkit-box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.025);
+          box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.025);
+  background-size: 800px 104px;
+  position: relative;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+/*# sourceMappingURL=loaders.css.map */

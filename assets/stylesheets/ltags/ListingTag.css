@@ -1,0 +1,93 @@
+/**
+*
+* Makes working with themeable CSS variables easier.
+*
+* $property: the CSS property to theme.
+* $cssVariable: The CSS variable that will store the themed value.
+* $fallback: The value to use as a fallback but as well for the CSS variable default value.
+*/
+/* Mixin for a load more wrapper, made by a container div and child button */
+/**
+*
+* Generates the src property for @font-face. The mixin is required
+* so that webpack for Storybook and the application can both
+* generate the font URL correctly.
+*
+* $font: the font file name, e.g. 'OpenDyslexic-Regular.otf'
+*/
+.ltag__listing {
+  font-family: var(--ff-sans-serif);
+  border: 1px solid #dbdbdb;
+  -webkit-box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.18);
+          box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+  display: block;
+  margin: 0.95em 0 1.2em;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .ltag__listing {
+    margin: 0.95em auto;
+    width: 620px;
+  }
+}
+
+.ltag__listing .ltag__listing-content {
+  padding: calc(0.5vw + 6px);
+}
+
+.ltag__listing .ltag__listing-content h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.ltag__listing .ltag__listing-content h3 a {
+  color: var(--body-color);
+}
+
+.ltag__listing .ltag__listing-content .ltag__listing-body {
+  max-width: 100%;
+  margin: 5px 0 15px 0;
+  font-size: 0.9em;
+}
+
+.ltag__listing .ltag__listing-content .ltag__listing-body a {
+  color: var(--body-color);
+}
+
+.ltag__listing .ltag__listing-content .ltag__listing-tags {
+  font-size: 0.7em;
+  line-height: 1.3em;
+}
+
+.ltag__listing .ltag__listing-content .ltag__listing-tags .ltag__listing-tag {
+  margin-right: calc(0.4vw + 4px);
+  margin-left: 1px;
+}
+
+.ltag__listing .ltag__listing-content .ltag__listing-tags .ltag__listing-tag a {
+  color: var(--card-color-secondary);
+  display: inline-block;
+  margin: 2px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.ltag__listing .ltag__listing-content .ltag__listing-author-info {
+  color: var(--card-color-tertiary);
+  line-height: 1.3em;
+}
+
+.ltag__listing .ltag__listing-content .ltag__listing-author-info a {
+  margin: 0.1vw 0;
+  padding: 0;
+  font-size: 0.7em;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: var(--card-color-tertiary);
+}
+/*# sourceMappingURL=ListingTag.css.map */

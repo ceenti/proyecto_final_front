@@ -1,0 +1,123 @@
+.authentication-modal__box {
+  position: relative;
+  margin-left: var(--su-4);
+  margin-right: var(--su-4);
+  height: auto;
+  width: auto;
+  background: var(--base-inverted);
+  border: 2px solid var(--base);
+  -webkit-box-shadow: 4px 4px 0 var(--base);
+          box-shadow: 4px 4px 0 var(--base);
+  color: var(--card-color);
+  border-radius: var(--radius);
+}
+
+@media (min-width: 640px) {
+  .authentication-modal__box {
+    margin: inherit;
+  }
+}
+
+.authentication-modal__close-btn {
+  position: absolute;
+  top: var(--su-3);
+  right: var(--su-3);
+}
+
+.authentication-modal__container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: var(--su-2);
+  padding: var(--su-4);
+}
+
+@media (min-width: 640px) {
+  .authentication-modal__container {
+    padding: var(--su-8) var(--su-8) var(--su-6);
+  }
+}
+
+.authentication-modal__image-container {
+  width: var(--su-8);
+  height: var(--su-8);
+  margin-bottom: var(--su-2);
+}
+
+@media (min-width: 640px) {
+  .authentication-modal__image-container {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.authentication-modal__image {
+  border-radius: var(--radius);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  height: auto;
+  width: 100%;
+}
+
+.authentication-modal__content {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: var(--su-1);
+}
+
+.authentication-modal__title {
+  color: var(--card-color);
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-tight);
+}
+
+@media (min-width: 640px) {
+  .authentication-modal__title {
+    font-size: var(--fs-3xl);
+  }
+}
+
+.authentication-modal__description {
+  color: var(--card-color-secondary);
+}
+
+.authentication-modal__actions {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: var(--su-1);
+  padding: 0 var(--su-4) var(--su-4);
+}
+
+@media (min-width: 640px) {
+  .authentication-modal__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    justify-self: center;
+    padding: 0 var(--su-8) var(--su-7);
+  }
+}
+
+.authentication-modal__footer {
+  border-top: 2px solid var(--base-100);
+  padding: var(--su-2) var(--su-4);
+}
+
+@media (min-width: 640px) {
+  .authentication-modal__footer {
+    padding: var(--su-5) var(--su-8);
+  }
+}
+
+.authentication-modal__footer-label {
+  font-size: var(--fs-s);
+  line-height: var(--lh-tight);
+  color: var(--card-color-secondary);
+  text-align: center;
+}
+/*# sourceMappingURL=signup-modal.css.map */

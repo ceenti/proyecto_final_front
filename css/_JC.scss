@@ -30,8 +30,7 @@
   margin-top: 7px;
   margin-left: 15px;
   position: relative;
-  text-align: center
-  ;
+  text-align: center;
 
   &:hover + .menu-avatar{
     display: block;
@@ -152,6 +151,7 @@ li{
   height: 66px;
   background-color: white;
   align-items: self-end;
+  padding: 10px;
 }
 .dropdown-item{
   background-color: white;
@@ -161,4 +161,16 @@ li{
 .dropdown-item{
   width: 150px;
 
+}
+.top-nav{
+ 
+  box-shadow: rgb(0, 0, 0, .1) ;
+}
+.btn-primary{
+  background-color: $color-title-darker;
+  margin-top: 7px;
+  margin-right: 5px;
+  display: none;
+  font-size: 18px;
+  padding: 1rem .5rem;
 }
