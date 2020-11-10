@@ -3,6 +3,11 @@
   color: dodgerblue;
 }
 
+.car_aside {
+  background-color: #eef0f1;
+  border: none;
+}
+
 body {
   position: relative;
   background-color: #eef0f1;
@@ -97,6 +102,11 @@ a:hover {
 
 .post-title {
   font-weight: bolder;
+}
+
+.post-title a {
+  color: #08090a;
+  text-decoration: none;
 }
 
 nav a:focus {
@@ -403,6 +413,13 @@ select {
   height: 50px;
   width: 40px;
   margin-right: 10px;
+  text-decoration: none;
+  border-color: transparent;
+}
+
+.img-logo:active {
+  text-decoration: none;
+  border-color: transparent;
 }
 
 .img-smill {

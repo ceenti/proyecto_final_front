@@ -80,6 +80,11 @@ header{
 }
 .post-title{
     font-weight: bolder;
+
+}
+.post-title a{
+    color: $color-black;
+    text-decoration: none;
 }
 
 nav a:focus{
