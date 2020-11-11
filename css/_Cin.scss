@@ -3,8 +3,8 @@ body {
     background-color:$color-body;
     padding-top: 75px;
   }
-header{
-      margin: 10px auto;
+.principal_header{
+      margin: 5px auto;
 }
 #overlay {
     position: fixed;
@@ -58,13 +58,13 @@ header{
 }
 .nav-pills .nav-link{
     font-family: $font-family;
-    color: $color-black;
-    font-size: 22px;
+    color: $color-basea90;
+    font-size: 20px;
     border-radius: 3px;
 }
 .nav-pills .nav-link.active{
     border-bottom: 4px  solid $color-button;
-    background-color: transparent;
+    background: none;
     color: $color-black;
     box-sizing: border-box;
 }
@@ -72,6 +72,9 @@ header{
     text-decoration: none;
     color: $color-button;
     background-color: $backgrand-color-nav;
+}
+.nav-pills .nav-link:focus{
+    text-decoration: none;
 }
 
 .nav-link{

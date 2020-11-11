@@ -4,6 +4,7 @@
   margin-right: 10px;
   text-decoration: none;
   border-color: transparent;
+  border-radius: 4px;
     &:active{
       text-decoration: none;
       border-color: transparent;
@@ -11,26 +12,24 @@
 }
 
 .img-smill{
-  height: 40px;
-  width: 30px;
-  margin-top: 7px;
+  height: 32px;
+  width: 32px;
   margin-left: 8px;
+  opacity: .7;
 }
 
 .img-bell{
-  height: 40px;
-  width: 30px;
-  margin-top: 7px;
+  height: 32px;
+  width: 32px;
   margin-left: 15px;
+  opacity: .7;
 }
 
 .img-avatar{
-  height: 40px;
-  width: 30px;
-  margin-top: 7px;
+  height: 32px;
+  width: 32px;
   margin-left: 15px;
   position: relative;
-  text-align: center;
 
   &:hover + .menu-avatar{
     display: block;
@@ -59,28 +58,22 @@ li{
 }
 
 .btn-primary{
-  // height: 35px;
-  // margin-top: 7px;
-  // margin-right: 5px;
-  // display:none;
-  // font-size: 16px;
-  background-color: $color-title-darker;
+  background-color: $color-button;
   margin-top: 7px;
   margin-right: 5px;
-  display: none;
   font-size: 18px;
-  padding: 1rem .5rem;
-
 }
 
 
 #footer{
-  background: rgb(204, 209, 209);
+  background: $color-button-base;
   height: auto;
   width: 100%;
   margin: 0;
   padding-top:48px;
   padding-bottom: 48px;
+  position: relative;
+  font-size: 16px;
   
   
   p{
@@ -102,6 +95,12 @@ li{
   .red-icon{
     height: 22px;
     width: 22px;
+    opacity: 0.5;
+  }
+  .info-redes{
+    margin-right: 20px;
+    line-height: 25px;
+    box-sizing: border-box;
   }
   
 
@@ -134,6 +133,8 @@ li{
     padding-bottom: 15px;
     padding-top: 8px;
     padding-left: 5px;
+    font-size: 1em;
+    text-align: left;
   }
 
   .a-f:hover{
@@ -144,12 +145,13 @@ li{
   } 
 
   .perezoso{
-    height:100px;
-    width: 65px;
+    height: 130px;
+    // width: 52px;
     position: absolute;
-    top:1px;
-    right:60px;
-    
+    top: -4px;
+    right: 1em;
+    -webkit-transform-origin: center top;
+    transform-origin: center top;    
   }
 
 }
@@ -169,7 +171,11 @@ li{
 
 }
 .top-nav{
- 
-  box-shadow: rgb(0, 0, 0, .1) ;
+ box-shadow: rgba(0, 0, 0, .1) ;
 }
 
+#footer p.info_community{
+  margin-right: 4px;
+  font-size: 12px;
+  margin-top: 1em;
+}
