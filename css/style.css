@@ -8,6 +8,15 @@
   border: none;
 }
 
+.aside-izq {
+  height: 50%;
+  line-height: 1.5em;
+}
+
+.aside-izq a {
+  padding: 8px;
+}
+
 .profile_thumbnail {
   width: 48px;
   height: 48px;
@@ -39,7 +48,29 @@
   line-height: 1.5em;
 }
 
-.more-button {
+.btn-link.more_button {
+  color: #08090a;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .5;
+  font-size: small;
+  padding-left: 40px;
+}
+
+#collapseOne {
+  height: 50%;
+  line-height: 1.5em;
+}
+
+#collapseOne .icon_collapse .redes-nav .red-icon {
+  width: 30px;
+  padding-left: 8px;
+  opacity: .5;
+}
+
+#collapseOne a {
+  padding: 8px;
   color: #08090a;
 }
 
@@ -596,10 +627,17 @@ li {
 #footer .perezoso {
   height: 130px;
   position: absolute;
-  top: -4px;
+  top: -3px;
   right: 1em;
   -webkit-transform-origin: center top;
-  transform-origin: center top;
+          transform-origin: center top;
+}
+
+#footer .perezoso:hover {
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .fixed-top {

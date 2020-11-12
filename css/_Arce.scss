@@ -6,12 +6,13 @@
     background-color:#eef0f1;
     border: none;
 }
-// .aside-left{
-//     height: 42vh;
-//     .link-aside{
-//         overflow-y: auto;
-//     }
-// }
+.aside-izq{
+    height: 50%;
+    line-height: 1.5em;
+    a{
+        padding: 8px;
+    }
+}
 .profile_thumbnail{
     width: 48px;
     height: 48px;
@@ -37,6 +38,33 @@
     color: $color-black;
     line-height: 1.5em;
 }
-.more-button{
-    color: $color-black;
+.btn-link {
+    
+    &.more_button{
+        color: $color-black;
+        text-decoration: none;
+        box-shadow: none;
+        opacity: .5;
+        font-size: small;
+        padding-left: 40px;
+        // &:active{
+        //     visibility: hidden;
+        // }
+    }
 }
+
+#collapseOne{
+    height: 50%;
+    line-height: 1.5em;
+    .icon_collapse .redes-nav .red-icon{
+        width: 30px;
+        padding-left: 8px;
+        opacity: .5;
+    }
+    a{
+        padding: 8px;
+        color: $color-black;
+    }
+    
+}
+

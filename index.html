@@ -7,15 +7,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>Desafio Final Front</title>
-        <script>
-            function clickSave(content) {
-                if (content.innerHTML == 'Saved'){
-                    content.innerHTML = 'Save';
-                } else {
-                    content.innerHTML = 'Saved'; 
-                }
-            }
-        </script>
     </head>
     
     <body>
@@ -56,8 +47,8 @@
 
         <div class= "container col-12">
             <aside class="row ">
-                <div class="d-none d-md-block col-md-3 col-lg-2">
-                    <nav class="aside_izq">
+                <div class="d-none d-md-block col-md-3 col-lg-3">
+                    <nav class="">
                         <a href="#">
                             <div class="col-12 d-flex flex-nowrap profile_content">
                                 <img src="images/681433-original.jpeg" class="rounded-circle profile_thumbnail" alt="Avatar">
@@ -68,7 +59,7 @@
                             </div>
                         </a>
 
-                        <div class="d-flex flex-column justify-content-between icon-list">
+                        <div class="d-flex flex-column justify-content-between icon-list aside-izq">
                             <a href="#" class="">
                                 <span class="">
                                     <img src="images/icon_nav/twemoji/drawer.svg" alt="">
@@ -103,15 +94,15 @@
                         <div class="d-flex flex-column justify-content-between" id="accordion">
                             <div class="">
                                 <div class="" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link more_button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    More...
-                                    </button>
-                                </h5>
+                                    <h5 class="mb-0 desapear_button">
+                                        <button class="btn btn-link more_button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        More...
+                                        </button>
+                                    </h5>
                                 </div>
                             
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="d-flex flex-column">
+                                <div class="d-flex flex-column icon_collapse">
                                     <a href="#" class="">
                                         <span class="">
                                             <img src="images/icon_nav/twemoji/thumb-up.svg" alt="">
@@ -160,6 +151,13 @@
                                         </span>
                                         Contact
                                     </a>
+                                    <div class="redes-nav">
+                                       <a href=""><img class="reds red-icon" src="images/icon_nav/twitter-logo.svg" alt=""></a> 
+                                       <a href=""><img class="reds red-icon" src="images/icon_nav/facebook.svg" alt=""></a>
+                                       <a href=""><img class="reds red-icon" src="images/icon_nav/github.svg" alt=""></a>
+                                       <a href=""><img class="reds red-icon" src="images/icon_nav/instagram.svg" alt=""></a>
+                                       <a href=""><img class="reds red-icon" src="images/icon_nav/twitch.svg" alt=""></a> 
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -194,7 +192,7 @@
                     </nav>
                 </div>
 
-                <div class="col-12 col-md-9 col-lg-7">
+                <div class="col-12 col-md-9 col-lg-6">
                     <header class="principal_header d-none d-md-flex align-items-center justify-content-between">
                         <h4 class="post-title"><a href="post.html">Posts</a></h4>
                         <ul class="nav nav-pills lg-3" id="pills-tab" role="tablist">
@@ -1516,11 +1514,26 @@
             function off() {
                 document.getElementById("overlay").style.display = "none";
             }
-        </script>
-        <script>
+
             function changeView(value) {
                 window.location.assign(value+'.html');
             }
+
+            function clickSave(content) {
+                if (content.innerHTML == 'Saved'){
+                    content.innerHTML = 'Save';
+                } else {
+                    content.innerHTML = 'Saved'; 
+                }
+            }
         </script>
+        <script>
+            $(document).ready(function(){
+                $("#headingOne").click(function(){
+                    $("#headingOne").hide();
+                });
+            });
+        </script>
+        
     </body>
 </html>

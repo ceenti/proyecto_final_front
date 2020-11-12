@@ -148,10 +148,14 @@ li{
     height: 130px;
     // width: 52px;
     position: absolute;
-    top: -4px;
+    top: -3px;
     right: 1em;
-    -webkit-transform-origin: center top;
-    transform-origin: center top;    
+    transform-origin: center top;
+ 
+        &:hover{
+          transform:rotate(-4deg); 
+          transition-duration: .5s;
+        }
   }
 
 }
