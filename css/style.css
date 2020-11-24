@@ -8,13 +8,33 @@
   border: none;
 }
 
+.userInfo .profile_content:hover {
+  background-color: rgba(8, 9, 10, 0.05);
+  border-radius: 5px;
+}
+
 .aside-izq {
   height: 50%;
   line-height: 1.5em;
 }
 
-.aside-izq a {
+.aside-izq a.list-aside {
   padding: 8px;
+  display: inline-block;
+}
+
+.aside-izq a.list-aside:hover {
+  background-color: rgba(8, 9, 10, 0.05);
+  border-radius: 5px;
+}
+
+.aside-izq a.list-aside .dataCount {
+  background-color: rgba(8, 9, 10, 0.05);
+  border-radius: 5px;
+  padding: 8px;
+  font-size: .75rem;
+  margin-left: auto;
+  display: inline-block;
 }
 
 .profile_thumbnail {

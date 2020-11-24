@@ -6,11 +6,33 @@
     background-color:#eef0f1;
     border: none;
 }
+.userInfo{
+    .profile_content{
+        &:hover{
+            background-color: $color-button-hover-aside_izq;
+            border-radius: 5px;
+        }
+    }
+    
+}
 .aside-izq{
     height: 50%;
     line-height: 1.5em;
-    a{
+    a.list-aside{
         padding: 8px;
+        display: inline-block;
+        &:hover{
+            background-color: $color-button-hover-aside_izq;
+            border-radius: 5px;
+        }
+        .dataCount{
+            background-color: $color-button-hover-aside_izq;
+            border-radius: 5px;
+            padding: 8px;
+            font-size: .75rem;
+            margin-left: auto;
+            display: inline-block;
+        }
     }
 }
 .profile_thumbnail{
