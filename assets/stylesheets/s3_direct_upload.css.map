@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "s3_direct_upload.scss"
-    ],
-    "names": [],
-    "file": "s3_direct_upload.css"
-}
