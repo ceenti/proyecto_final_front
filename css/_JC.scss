@@ -25,24 +25,23 @@
   opacity: .7;
 }
 
-.img-avatar{
-  height: 32px;
-  width: 32px;
-  margin-left: 15px;
-  position: relative;
-
-  &:hover + .menu-avatar{
+.rounded-circle{
+    &:hover + .menu-avatar{
     display: block;
   }
+/
 
-}
 .menu-avatar{
-  position: absolute;
+  top: 40px;
   display: none;
   transition: all 0.10s ease-in-out;
   text-decoration: none;
   border-radius: 5px;
+  position: relative;
+  top: 40px;
+  
 }
+
 
 li{
   text-decoration: none;
@@ -52,7 +51,7 @@ li{
 
 
 .form-control{
-  margin-top: 7px;
+  height: 50px;
   margin-left: 10px;
   font-size: 16px;
 }
@@ -61,7 +60,7 @@ li{
   background-color: $color-button;
   margin-top: 7px;
   margin-right: 5px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
@@ -167,13 +166,10 @@ li{
 }
 .dropdown-item{
   background-color: white;
-  text-decoration: none;
-  padding: 10px;
+  
+  
 }
-.dropdown-item{
-  width: 150px;
 
-}
 .top-nav{
  box-shadow: rgba(0, 0, 0, .1) ;
 }
